@@ -1,0 +1,40 @@
+*{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ height: 100vh;
+}
+
+.tabs-head{
+ display: flex;
+ align-items: stretch;
+}
+
+.tabs-simple{
+ display: flex;
+ width: 33.333%;
+ height: 50px;
+ justify-content: center;
+ align-items: center;
+ background-color: lightsalmon;
+ border-right: 1px solid #fff;
+ cursor: pointer;
+}
+
+.tabs-simple.active{
+ background-color: lightgreen;
+}
+.tabs-content{
+ display: none;
+}
+
+.tabs-content.active{
+ display: block;
+}
